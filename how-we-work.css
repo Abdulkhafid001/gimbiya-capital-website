@@ -1,0 +1,162 @@
+:root {
+    --main-app-color: #145a32;
+    /*deep emerald */
+    --background-off-white: #f9f9f6;
+    --burnt-orange: #d35400;
+    --slate-grey: #2c3e50;
+}
+
+/* utility classes */
+
+.banner {
+    height: 80vh;
+    background: url("assets/Gimbiya\ Capital\ search\ fund\ banner\ bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-text {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.navigation {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation-links {
+    margin: 50px 0;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.overview-btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--main-app-color);
+    padding: 15px 60px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 60px 0;
+}
+
+.xcelarator-about {}
+
+@media screen and (max-width:500px) {
+
+    /* utility classes */
+    .mb-sm-lg {
+        margin-bottom: 60px;
+    }
+
+    .mt-sm-lg {
+        margin-top: 60px;
+    }
+
+    .my-sm {
+        margin: 20px 0;
+    }
+
+    /* staff section */
+    .staff-section {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .investment-criteria {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    /* Investment Criteria */
+    .investment-criteria {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: center;
+        color: #145a32;
+    }
+
+    .company-profile {
+        text-decoration: underline;
+        font-size: 2em;
+        margin: 30px;
+    }
+
+    .criteria-amount {
+        font-weight: bold;
+    }
+
+    /* Preferred Sectors */
+    .preferred-sectors {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    .preferred-sectors h2 {
+        font-family: "Port Lligat Sans", sans-serif;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+        color: #145a32;
+        margin: 40px 0;
+    }
+
+    .sector-heading {
+        font-weight: bold;
+        color: #145a32;
+    }
+
+    /* Contact Form */
+    form {
+        margin: 10px;
+    }
+
+    form label {
+        display: block;
+    }
+
+    form label span {
+        color: red;
+    }
+
+    form input[type="text"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    form input[type="email"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    form input[type="submit"] {
+        display: block;
+        background: #145a32;
+        color: white;
+        width: 80%;
+        margin: 20px auto;
+        padding: 15px;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+}

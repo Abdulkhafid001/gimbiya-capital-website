@@ -18,31 +18,93 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav>
         <div class="nav-text-and-logo">
+            <!-- nav logo and text -->
             <div class="logo">
                 <figure>
                     <img src="assets/gimbiya-logo.jpg" width="50" height="50" alt="Gimbiya Capital Logo">
                 </figure>
             </div>
-            <h3 class="navbar-text">Gimbiya Capital</h3>
+            <h3 class="navbar-text"><span class="nav-logo-large-text">Gimbiya</span> Capital</h3>
         </div>
-        <div class="nav-links">
+        <!-- navlinks -->
+        <div class="nav-links" id="navLinks">
             <a href="#">home</a>
             <a href="#">about us</a>
-            <a href="#">contact</a>
+            <a href="#" class="d-lg-none">contact</a>
             <a href="#">how we work</a>
         </div>
+        <!-- mobile-menu -->
         <div class="mobile-menu">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <!-- contact-us-btn -->
+        <div class="contact-us d-lg-block">
+            <a href="#" class="contact-us-btn">contact us</a>
+        </div>
     </nav>
+    <!-- footer -->
+    <footer>
+        <img src="assets/gimbiya-logo.jpg" class="logo-image" width="100" height="100" alt="gimbiya capital logo">
+        <h4 class="fw-600">for investor enquiries</h4>
+        <div class="ceo-details">
+            <h5>bolutife(tomi) babalola</h5>
+            <h5>(44) 7508 764 675</h5>
+            <h5>Bolutife@gimbiyacapital.com</h5>
+        </div>
+        <h4>Copyright © 2025 Gimbiya Capital - All Rights Reserved.</h4>
+    </footer>
+    <!-- How we work headings -->
+    <div class="how-we-work-headings">
+        <div class="left-bar-and-heading">
+            <div class="left-bar"></div>
+            <h1 class="heading">Our <br> Companies</h1>
+        </div>
+        <p class="heading-text">The Gimbiya Search Xcelerator platform <br>
+            invests in talented entrepreneurs who <br>
+            source, acquire, and manage their own <br>
+            businesses within Gimbiya holding <br>
+            company structure.</p>
+    </div>
+    <!-- Investment Category  -->
+    <div class="investment-category">
+        <div class="investment-left-bar-and-heading">
+            <div class="investment-left-bar"></div>
+            <h1 class="heading">B2B Services</h1>
+        </div>
+        <div></div>
+    </div>
+
+    <!-- Company Cards -->
+    <div class="company-card">
+        <div class="company-image-container">
+            <img class="company-image" src="assets/gimbiya-company-profile-pic.png" alt="Image solutions logo">
+        </div>
+        <div class="company-about">
+            <h3 class="company-title">Image Solutions, LLC</h3>
+            <h5 class="company-subtitle">Acquired December, 2024</h5>
+        </div>
+
+        <p>Image Solutions, LLC is considered one of the
+            largest IT service providers in western North
+            Carolina, providing comprehensive IT services
+            for both hardware and software and employs
+            35 people.</p>
+        <a href="#" class="company-site-link">www.imagesolutions-online.com</a>
+        <div class="ceo-profile">
+            <h6>CEO: Davide Zanchi</h6>
+            <img class="ceo-image" src="assets/Davide-Zanchi-headshot.jpg" alt="Davide Zanchi Headshot">
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
