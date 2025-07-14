@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-app-color: #145a32;
+    /*deep emerald */
+    --background-off-white: #f9f9f6;
+    --burnt-orange: #d35400;
+    --slate-grey: #2c3e50;
+}
+
+/* utility classes */
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--main-app-color);
+}
+
+.txt {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* <=== RESPONSIVE (Mobile Screens)===> */
+@media screen and (max-width: 500px) {
+
+    /* navbar */
+    nav {
+        background-color: var(--burnt-orange);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        position: relative;
+        /* overflow: hidden; */
+    }
+
+    .nav-text-and-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {}
+
+    .nav-links {
+        position: absolute;
+        background: #ffffff;
+        top: 50%;
+        right: 0;
+        padding: 1em 2em;
+    }
+
+    .nav-links a {
+        display: block;
+        color: #000000;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar-text {
+        color: #ffffff;
+        font-family: ;
+        font-weight: 500;
+        margin-left: 1em;
+    }
+
+    .mobile-menu {}
+}
