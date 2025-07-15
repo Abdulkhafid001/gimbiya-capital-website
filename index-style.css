@@ -192,7 +192,7 @@ footer .ceo-details {
 }
 
 /* <=== RESPONSIVE (Mobile Screens)===> */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
 
     /* Utility Classes */
     .d-lg-block {

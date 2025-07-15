@@ -4,9 +4,17 @@
     --background-off-white: #f9f9f6;
     --burnt-orange: #d35400;
     --slate-grey: #2c3e50;
+    --text-grey: #707070;
 }
 
 /* utility classes */
+.mx-lg {
+    margin: 40px 60px;
+}
+
+.my-lg{
+    margin: 40px 0;
+}
 
 .banner {
     height: 80vh;
@@ -14,6 +22,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 .banner-text {
@@ -22,6 +32,8 @@
     text-align: center;
     font-weight: 700;
     font-size: 30px;
+    text-align: center;
+
 }
 
 .navigation {
@@ -31,12 +43,24 @@
 
 .navigation-links {
     margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navigation-links a {
     text-decoration: none;
     color: #000;
+    /* border-right: 1px solid #145a32; */
+    font-weight: 500;
 }
+
+.navigation-links a:hover {
+    text-decoration: underline;
+    color: #145a32;
+    font-weight: 500;
+}
+
 
 .overview-btn {
     text-decoration: none;
@@ -49,9 +73,158 @@
     margin: 60px 0;
 }
 
-.xcelarator-about {}
+.xcelarator-about {
+    text-align: center;
+}
 
-@media screen and (max-width:500px) {
+.xcelarator-about p {
+    text-align: center;
+    margin: 40px;
+}
+
+/* staff section */
+.staff-section {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 50px 0;
+}
+
+.staff-profile {
+    margin: 20px 0;
+}
+
+.staff-name {
+    color: #06264c;
+}
+
+/* company profile card */
+.company-card {
+    background-color: #f7eee1;
+    margin: 10px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.company-image-container {
+    margin-bottom: 30px;
+}
+
+.company-title {
+    font-weight: 700;
+}
+
+.company-subtitle {
+    color: #635F5F;
+}
+
+.company-site-link {
+    color: #D2B26D;
+}
+
+.company-image {
+    width: 250px;
+    height: 100px;
+}
+
+.company-card p {
+    margin: 40px 0;
+}
+
+.ceo-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.company-card .ceo-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Investment Criteria */
+.investment-criteria {
+    font-family: "Port Lligat Sans", sans-serif;
+    text-align: center;
+    color: #145a32;
+}
+
+.company-profile {
+    text-decoration: underline;
+    font-size: 2em;
+    margin: 30px;
+}
+
+.criteria-amount {
+    font-weight: bold;
+}
+
+/* Preferred Sectors */
+.preferred-sectors {
+    font-family: "Port Lligat Sans", sans-serif;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.preferred-sectors h2 {
+    font-family: "Port Lligat Sans", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #145a32;
+    margin: 40px 0;
+}
+
+.sector-heading {
+    font-weight: bold;
+    color: #145a32;
+}
+
+/* form section */
+form label {
+    display: block;
+}
+
+form label span {
+    color: red;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+
+form select {
+    width: 100%;
+    padding: 15px;
+
+
+}
+
+form textarea {
+    width: 100%;
+    padding: 15px;
+
+}
+
+
+form input[type="submit"] {
+    display: block;
+    background: #145a32;
+    color: white;
+    width: 20%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1000px) {
 
     /* utility classes */
     .mb-sm-lg {
@@ -66,13 +239,12 @@
         margin: 20px 0;
     }
 
-    /* staff section */
-    .staff-section {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
+    .mx-lg {
+        margin: 0;
     }
 
-    .investment-criteria {
+    /* staff section */
+    .staff-section {
         text-align: center;
         font-family: "Poppins", sans-serif;
     }
