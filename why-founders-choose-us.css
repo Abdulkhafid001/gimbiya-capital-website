@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-app-color: #145a32;
+    --background-off-white: #f9f9f6;
+    --burnt-orange: #d35400;
+    --slate-grey: #2c3e50;
+}
+
+/* Utility classes */
+
+/* <=============================================== Large Screens ===================================> */
+/* Banner */
+.banner {
+    background: url("assets/Gimbiya\ Capital\ search\ fund\ banner\ bg.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.banner h3 {
+    text-transform: capitalize;
+    font-size: 5em;
+}
+
+/* About The Founders */
+.about-the-founders {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-the-founders h3 {
+    font-weight: 700;
+    color: var(--main-app-color);
+    margin: 20px 0;
+}
+
+
+/* what makes us different */
+.what-makes-us-different {
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.what-makes-us-different h3 {
+    font-weight: 700;
+    color: var(--main-app-color);
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.difference-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.difference-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.difference-box .icon-box {
+    background-color: #D9F3E4;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.difference-box .icon-box i {
+    font-size: 40px;
+    color: #145a32;
+}
+
+.difference-text {
+    margin-left: 20px;
+}
+
+.difference-text h6 {
+    color: #145a32;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: start;
+}
+
+.difference-text p {
+    text-align: start;
+    font-size: 12px;
+}
+
+
+/* Investment Criteria */
+.investment-criteria {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.investment-criteria h2 {
+    text-transform: capitalize;
+    color: #145a32;
+    font-weight: bold;
+}
+
+.investment-criteria h3 {
+    text-transform: capitalize;
+    color: #145a32;
+    font-weight: bold;
+}
+
+.creteria-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.criteria-box {
+    margin: 50px 0;
+}
+
+.criteria-icon-box {
+    background-color: #D9F3E4;
+    width: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.criteria-icon-box i {
+    font-size: 50px;
+    color: #145a32;
+}
+
+.criteria-box h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.criteria-box h6 {
+    color: #635F5F;
+}
+
+.criteria-box p {
+    color: #635F5F;
+}
+
+/* Preferred Sectors */
+.preferred-sectors {
+    font-family: "Poppins", sans-serif;
+    width: 50%;
+    margin: auto;
+}
+
+.preferred-sectors h3 {
+    text-transform: capitalize;
+    color: #145a32;
+    font-weight: bold;
+    text-align: center;
+}
+
+.preferred-sector-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.preferred-sector-icon-box {
+    background-color: #D9F3E4;
+    padding: 20px 25px;
+    border-radius: 20px;
+}
+
+.preferred-sector-icon-box i {
+    font-size: 30px;
+    color: #145a32;
+}
+
+.preferred-sector-text {
+    text-align: end;
+}
+
+/* .preferred-sector-text h5 {} */
+
+.preferred-sector-text p {
+    font-size: 13px;
+}
+
+
+
+/* <============================================ Small Screens =============================================> */
+@media screen and (max-width:800px) {
+
+    /* Banner */
+    .banner {
+        background: url("assets/Gimbiya\ Capital\ search\ fund\ banner\ bg.jpg");
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+
+    .banner h3 {
+        text-transform: capitalize;
+        font-size: 2em;
+    }
+
+    /* About The Founders */
+    .about-the-founders {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-the-founders h3 {
+        font-weight: 700;
+        color: var(--main-app-color);
+        margin: 20px 0;
+    }
+
+    /* what makes us different */
+    .what-makes-us-different {
+        padding: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .what-makes-us-different h3 {
+        font-weight: 700;
+        color: var(--main-app-color);
+        margin: 20px 0;
+        text-transform: capitalize;
+    }
+
+    .difference-box-container {
+        display: block;
+    }
+
+    .difference-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0;
+        background-color: #F5F5F5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .difference-box .icon-box {
+        background-color: #D9F3E4;
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .difference-box .icon-box i {
+        font-size: 40px;
+        color: #145a32;
+    }
+
+    .difference-text {
+        margin-left: 20px;
+    }
+
+    .difference-text h6 {
+        color: #145a32;
+        font-size: 13px;
+        text-transform: capitalize;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .difference-text p {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    /* Investment Criteria */
+    .investment-criteria {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .investment-criteria h2 {
+        text-transform: capitalize;
+        color: #145a32;
+        font-weight: bold;
+    }
+
+    .investment-criteria h3 {
+        text-transform: capitalize;
+        color: #145a32;
+        font-weight: bold;
+    }
+
+    .creteria-box-container {
+        display: block;
+    }
+
+    .criteria-box {
+        margin: 50px 0;
+    }
+
+    .criteria-icon-box {
+        background-color: #D9F3E4;
+        width: 100px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .criteria-icon-box i {
+        font-size: 50px;
+        color: #145a32;
+    }
+
+    .criteria-box h5 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .criteria-box h6 {
+        color: #635F5F;
+    }
+
+    .criteria-box p {
+        color: #635F5F;
+    }
+
+    /* Preferred Sectors */
+    .preferred-sectors {
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        margin: 0;
+    }
+
+    .preferred-sectors h3 {
+        text-transform: capitalize;
+        color: #145a32;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .preferred-sector-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 0;
+        background-color: #F5F5F5;
+        color: black;
+    }
+
+    .preferred-sector-icon-box {
+        background-color: #D9F3E4;
+        padding: 20px 25px;
+        border-radius: 20px;
+    }
+
+    .preferred-sector-icon-box i {
+        font-size: 30px;
+        color: #145a32;
+    }
+
+    .preferred-sector-text {
+        text-align: end;
+    }
+
+    /* .preferred-sector-text h5 {} */
+
+    .preferred-sector-text p {
+        font-size: 13px;
+    }
+}
