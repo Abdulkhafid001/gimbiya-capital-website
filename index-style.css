@@ -50,90 +50,203 @@
     font-weight: 600;
 }
 
+.my-lg {
+    margin: 50px 0;
+}
+
 /* Large Screens  */
 
-/* Navbar */
-nav {
-    background-color: var(--main-app-color);
-    /* padding: 0.3em; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-text-and-logo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* .logo {} */
-
-.navbar-text {
-    margin-left: 5px;
-    font-family: "Roboto", sans-serif;
-    color: #ffffff;
-
-}
-
-.nav-logo-large-text {
-    font-size: 70px;
-    font-family: "Roboto", sans-serif;
-}
-
-/* .nav-links {} */
-
-.nav-links a {
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    color: white;
-    text-transform: uppercase;
-
-}
-
-.contact-us-btn {
-    display: block;
-    text-decoration: none;
-    background-color: var(--burnt-orange);
-    padding: 0.1em 1.5em;
-    color: #ffffff;
-    font-size: 35px;
+/* Banner */
+/* Banner */
+.banner {
+    background-color: #F9F9F6;
+    padding: 80px 10px;
+    font-family: "Inter", sans-serif;
     text-align: center;
-    text-transform: capitalize;
-    font-family: "Roboto", serif;
-    border-radius: 10px;
+    color: #145a32;
+}
+
+.banner-heading {
+    font-size: 4vw;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.banner-text {
+    white-space: pre-line;
+}
+
+.cta-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 40px;
+    width: 50%;
+    margin: auto;
+}
+
+.cta-btns a {
+    display: block;
+    background-color: #145a32;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.watch-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.watch-btn i {
+    display: block;
+}
+
+.watch-btn p {
+    margin-left: 6px;
+}
+
+/* Who We Are */
+.who-we-are {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
 
 }
 
-.mobile-menu {
+.who-we-are h3 {
+    text-align: center;
+    color: #145a32;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* .who-we-are p {} */
+
+/* What We Believe */
+.what-we-believe {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.what-we-believe h3 {
+    text-align: center;
+    color: #145a32;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* .what-we-believe p {} */
+
+.what-we-believe p span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #145a32;
+    font-family: "Podkova", serif;
+}
+
+/* Where We Focus */
+.where-we-focus {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.where-we-focus h3 {
+    text-align: center;
+    color: #145a32;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.where-we-focus p {
+    text-align: center;
+    padding: 20px;
+}
+
+.business-criteria {
+    padding: 10px;
+    background-color: #145a32;
+    color: white;
+    border-radius: 0;
+}
+
+.business-criteria h5 {
+    color: #145a32;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+}
+
+.criteria-icon-and-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+    margin: auto;
+}
+
+.criteria {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.criteria i {
+    display: block;
+    font-size: 2vw;
+    color: #79EFBC;
+}
+
+.criteria h5 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.criteria p {
     display: none;
 }
 
-/* Banner */
-
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 1em;
-    background-color: #145a32;
+/* Founder Profile */
+.founder-profile {
+    font-family: "Poppins", sans-serif;
     text-align: center;
-    color: #ffffff;
-    font-family: "Podkova", sans-serif;
-    text-transform: capitalize;
+    padding: 20px;
 }
 
-footer .logo-image {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
+.founder-profile h3 {
+    font-weight: bold;
+    color: #145a32;
 }
 
-footer .ceo-details {
-    margin: 40px 0;
+.founder-profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.founder-profile-container img {
+    border-radius: 50%;
+    margin: 0;
+}
+
+.founder-text {
+    padding: 50px;
+}
+
+/* .founder-text p {} */
+
+.founder-text a {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #145a32;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
 /* <=== RESPONSIVE (Mobile Screens)===> */
 @media screen and (max-width: 1000px) {
@@ -147,60 +260,8 @@ footer .ceo-details {
         display: block;
     }
 
-    /* navbar */
-    nav {
-        background-color: var(--burnt-orange);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em;
-        position: relative;
-    }
-
-    .nav-text-and-logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* .logo {} */
-
-    .navbar-text {
-        color: #ffffff;
-        /* font-family: ; */
-        font-weight: 500;
-        margin-left: 0.5em;
-    }
-
-    .nav-links {
-        position: absolute;
-        background: #ffffff;
-        top: 50%;
-        right: 0;
-        padding: 1em 2em;
-        margin-top: 15px;
-        margin-right: 15px;
-        border-radius: 10px;
-        display: block;
-    }
-
-    .nav-links a {
-        display: block;
-        color: #000000;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        text-align: left;
-        text-transform: capitalize;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .mobile-menu a {
-        color: #ffffff;
-        font-size: 35px;
+    .my-lg{
+        margin: 0;
     }
 
     /* Banner */
@@ -213,7 +274,7 @@ footer .ceo-details {
     }
 
     .banner-heading {
-        font-size: 10vw;
+        font-size: 8vw;
         font-weight: bold;
         white-space: pre-line;
     }
@@ -227,6 +288,8 @@ footer .ceo-details {
         justify-content: space-around;
         align-items: baseline;
         margin-top: 40px;
+        width: 100%;
+        margin: 0;
     }
 
     .cta-btns a {
@@ -251,71 +314,6 @@ footer .ceo-details {
     .watch-btn p {
         margin-left: 6px;
     }
-
-    /* Benefits */
-    .benefits {
-        padding: 20px 10px;
-        text-align: center;
-    }
-
-    .benefits h3 {
-        color: #145a32;
-        font-family: "Poppins", sans-serif;
-        margin-bottom: 40px;
-        font-size: 10vw;
-        font-weight: 500;
-    }
-
-    .benefits-criteria {
-        margin-bottom: 40px;
-
-    }
-
-    .benefits-criteria h4 {
-        color: #145a32;
-        font-family: "Rubik", sans-serif;
-    }
-
-    .benefits-criteria p {
-        font-family: "Roboto", sans-serif;
-        text-align: justify;
-    }
-
-    .business-criteria {
-        padding: 30px 10px;
-        background-color: #145a32;
-        color: white;
-        border-radius: 40px;
-    }
-
-    .business-criteria h5 {
-        color: #145a32;
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-
-    }
-
-    .criteria i {
-        display: block;
-        font-size: 20vw;
-    }
-
-    .criteria h5 {
-        color: white;
-        font-family: "Poppins", sans-serif;
-        margin: 10px 0;
-    }
-
-    .criteria p {
-        font-weight: 200;
-        font-family: "Poppins", sans-serif;
-    }
-
-    /* Preferred Sectors */
-
-
-
-
 
 
     /* company profile card */
@@ -364,4 +362,145 @@ footer .ceo-details {
         border-radius: 50%;
     }
 
+    /* Who We Are */
+    .who-we-are {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .who-we-are h3 {
+        text-align: center;
+        color: #145a32;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    /* .who-we-are p {} */
+
+    /* What We Believe */
+    .what-we-believe {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .what-we-believe h3 {
+        text-align: center;
+        color: #145a32;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    /* .what-we-believe p {} */
+
+    .what-we-believe p span {
+        font-size: 30px;
+        font-weight: bold;
+        color: #145a32;
+        font-family: "Podkova", serif;
+    }
+
+    /* Where We Focus */
+    .where-we-focus {
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+    }
+
+    .where-we-focus h3 {
+        text-align: center;
+        color: #145a32;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .where-we-focus p {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .business-criteria {
+        padding: 30px 10px;
+        background-color: #145a32;
+        color: white;
+        border-radius: 40px;
+    }
+
+    .business-criteria h5 {
+        color: #145a32;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+
+    }
+
+    .criteria-icon-and-text {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .criteria {
+        margin: 0;
+    }
+
+    .criteria i {
+        display: block;
+        font-size: 20vw;
+        color: #79EFBC;
+        text-align: center;
+    }
+
+    .criteria h5 {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 10px 0;
+        text-align: center;
+
+    }
+
+    .criteria p {
+        display: block;
+        font-weight: 200;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+
+    /* Founder Profile */
+    .founder-profile {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .founder-profile h3 {
+        font-weight: bold;
+        color: #145a32;
+    }
+
+    .founder-profile-container {
+        display: block;
+    }
+
+    .founder-profile-container img {
+        border-radius: 50%;
+        margin: 100px 0;
+    }
+
+    .founder-text {
+        margin: 40px 0;
+    }
+
+    /* .founder-text p {} */
+
+    .founder-text a {
+        display: block;
+        margin-top: 40px;
+        background-color: #145a32;
+        color: white;
+        text-decoration: none;
+        padding: 20px 40px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
 }
