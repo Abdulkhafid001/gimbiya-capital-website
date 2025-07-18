@@ -14,6 +14,73 @@
 /* Utility classes */
 
 /* <=============================================== Large Screens ===================================> */
+/* Navbar */
+
+/* Navbar Styles */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d14e00;
+    /* deep orange */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.logo img {
+    height: 32px;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.75;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    display: block;
+    border-radius: 3px;
+}
+
 /* Banner */
 .banner {
     background: url("assets/Gimbiya\ Capital\ search\ fund\ banner\ bg.jpg");
@@ -148,6 +215,35 @@
 
 /* <============================================ Small Screens =============================================> */
 @media screen and (max-width:800px) {
+
+    /* Navbar */
+    .nav-links {
+        position: absolute;
+        top: 64px;
+        right: 1rem;
+        background: white;
+        color: black;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: none;
+        z-index: 999;
+    }
+
+    .nav-links a {
+        color: black;
+        padding: 0.5rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 
     /* Banner */
     .banner {

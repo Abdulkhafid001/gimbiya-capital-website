@@ -28,6 +28,34 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <section>
+        <header class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/Logo.png" alt="Gimbiya Capital Logo">
+                    <span>Gimbiya Capital</span>
+                </div>
+
+                <nav class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
+                    <a href="investment-criteria.html">Investment Criteria</a>
+                    <a href="our-investors.html">Our Investors</a>
+                    <a href="our-advisors.html">Our Advisors</a>
+                    <a href="#">LinkedIn</a>
+                </nav>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+    </section>
     <!-- Investors Banner -->
     <section>
         <div class="advisors-banner">
@@ -86,7 +114,15 @@
             </div>
         </footer>
     </section>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
 
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+    </script>
 </body>
 
 </html>
