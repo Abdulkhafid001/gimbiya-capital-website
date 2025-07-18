@@ -12,7 +12,7 @@
     margin: 40px 60px;
 }
 
-.my-lg{
+.my-lg {
     margin: 40px 0;
 }
 
@@ -24,6 +24,7 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .banner-text {
@@ -31,9 +32,8 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 4vw;
     text-align: center;
-
 }
 
 .navigation {
@@ -50,9 +50,17 @@
 
 .navigation-links a {
     text-decoration: none;
-    color: #000;
-    /* border-right: 1px solid #145a32; */
-    font-weight: 500;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #145a32;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navigation-links a:hover {
+    text-decoration: underline;
+    background-color: white;
+
 }
 
 .navigation-links a:hover {
@@ -75,6 +83,10 @@
 
 .xcelarator-about {
     text-align: center;
+}
+
+.xcelarator-about h1 {
+    color: #145a32;
 }
 
 .xcelarator-about p {
@@ -143,45 +155,79 @@
     border-radius: 50%;
 }
 
-/* Investment Criteria */
-.investment-criteria {
-    font-family: "Port Lligat Sans", sans-serif;
-    text-align: center;
-    color: #145a32;
+/* Main Section Heading (Big)  */
+.how-we-work-headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #145a32;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 0;
 }
 
-.company-profile {
-    text-decoration: underline;
-    font-size: 2em;
-    margin: 30px;
+.left-bar-and-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid #145a32; */
 }
 
-.criteria-amount {
+.left-bar {
+    background-color: #d35400;
+    width: 5px;
+    height: 80px;
+}
+
+.left-bar-and-heading .heading {
+    font-size: 30px;
     font-weight: bold;
+    margin-left: 15px;
 }
 
-/* Preferred Sectors */
-.preferred-sectors {
-    font-family: "Port Lligat Sans", sans-serif;
-    text-align: center;
-    color: #2c3e50;
+.heading-text {
+    font-size: 20px;
 }
 
-.preferred-sectors h2 {
-    font-family: "Port Lligat Sans", sans-serif;
-    text-align: center;
-    text-decoration: underline;
+/* Investment Category (Small Heading) */
+
+.investment-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #06264c;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.investment-left-bar-and-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.investment-left-bar {
+    background-color: #d35400;
+    width: 5px;
+    height: 18px;
+}
+
+.investment-left-bar-and-heading .heading {
+    font-size: 20px;
     font-weight: bold;
-    color: #145a32;
-    margin: 40px 0;
+    margin-left: 15px;
 }
 
-.sector-heading {
-    font-weight: bold;
-    color: #145a32;
-}
 
 /* form section */
+form {
+    width: 80%;
+    margin: auto;
+}
+
 form label {
     display: block;
 }
@@ -243,6 +289,87 @@ form input[type="submit"] {
         margin: 0;
     }
 
+    /* Banner */
+    .banner-text {
+        font-size: 6vw;
+    }
+
+    /* Nav links (not nav) */
+    .navigation-links a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        background-color: white;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    /* Main Section Heading (Big)  */
+    .how-we-work-headings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #06264c;
+        color: white;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .left-bar-and-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* outline: 1px solid #145a32; */
+    }
+
+    .left-bar {
+        background-color: #d35400;
+        width: 5px;
+        height: 80px;
+    }
+
+    .left-bar-and-heading .heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    .heading-text {
+        font-size: 10px;
+    }
+
+    /* Investment Category (Small Heading) */
+
+    .investment-category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #06264c;
+        color: white;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .investment-left-bar-and-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .investment-left-bar {
+        background-color: #d35400;
+        width: 5px;
+        height: 18px;
+    }
+
+    .investment-left-bar-and-heading .heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+
     /* staff section */
     .staff-section {
         text-align: center;
@@ -266,31 +393,15 @@ form input[type="submit"] {
         font-weight: bold;
     }
 
-    /* Preferred Sectors */
-    .preferred-sectors {
-        font-family: "Port Lligat Sans", sans-serif;
-        text-align: center;
-        color: #2c3e50;
-    }
 
-    .preferred-sectors h2 {
-        font-family: "Port Lligat Sans", sans-serif;
-        text-align: center;
-        text-decoration: underline;
-        font-weight: bold;
-        color: #145a32;
-        margin: 40px 0;
-    }
-
-    .sector-heading {
-        font-weight: bold;
-        color: #145a32;
-    }
 
     /* Contact Form */
     form {
-        margin: 10px;
+        width: 100%;
+        /* margin: 5px; */
+        padding: 10px;
     }
+
 
     form label {
         display: block;
@@ -305,6 +416,7 @@ form input[type="submit"] {
         width: 100%;
         margin-bottom: 20px;
         padding: 15px;
+        border: 1px solid black;
     }
 
     form input[type="email"] {
@@ -312,6 +424,7 @@ form input[type="submit"] {
         width: 100%;
         margin-bottom: 20px;
         padding: 15px;
+        border: 1px solid black;
     }
 
     form textarea {
@@ -319,6 +432,15 @@ form input[type="submit"] {
         width: 100%;
         margin-bottom: 20px;
         padding: 15px;
+        border: 1px solid black;
+    }
+
+    form select {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid black;
     }
 
     form input[type="submit"] {

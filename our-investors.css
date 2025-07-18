@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-app-color: #145a32;
+    /*deep emerald */
+    --background-off-white: #f9f9f6;
+    --burnt-orange: #d35400;
+    --slate-grey: #2c3e50;
+}
+
+/* Utility Classes */
+
+/* <============================== Large Screens ==============================> */
+/* Investors Banner */
+.investors-banner {
+    background-color: #145a32;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.investors-banner h2 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+/* Founder Profile */
+.founder {
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+}
+
+.founder h4 {
+    font-weight: bold;
+    color: #145a32;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.founder img {
+    border-radius: 50%;
+}
+
+.founder h5 {
+    font-weight: bold;
+}
+
+
+
+/* Main Section Heading (Big)  */
+.how-we-work-headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #145a32;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 0;
+}
+
+.left-bar-and-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid #145a32; */
+}
+
+.left-bar {
+    background-color: #d35400;
+    width: 5px;
+    height: 80px;
+}
+
+.left-bar-and-heading .heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.heading-text {
+    font-size: 20px;
+}
+
+
+/* Our Investors */
+.our-investors {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.our-investors-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.investor-profile {
+    margin: 20px 0;
+}
+
+.investor-profile img {
+    border-radius: 50%;
+}
+
+.investor-name {
+    font-weight: bold;
+}
+
+.investor-description {
+    font-size: 15px;
+}
+
+/* .investor-description {} */
+
+/* Contact Us Banner */
+.contact-us-banner {
+    background-color: #145a32;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+}
+
+.contact-us-banner h2 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.contact-us-banner q {
+    font-style: italic;
+}
+
+.contact-us-banner a {
+    display: block;
+    width: 30%;
+    margin: 40px auto 0 auto;
+    background-color: white;
+    padding: 10px 15px;
+    color: #145a32;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+
+/* <=============================== Small Screens ============================> */
+@media screen and (max-width: 1000px) {
+    /* Investors Banner */
+
+    .investors-banner {
+        background-color: #145a32;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .investors-banner h2 {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    /* Founder Profile */
+    .founder {
+        padding: 20px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+
+    }
+
+    .founder h4 {
+        font-weight: bold;
+        color: #145a32;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .founder img {
+        border-radius: 50%;
+    }
+
+    .founder h5 {
+        font-weight: bold;
+    }
+
+    /* Main Section Heading (Big)  */
+    .how-we-work-headings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #145a32;
+        color: white;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .left-bar-and-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* outline: 1px solid #145a32; */
+    }
+
+    .left-bar {
+        background-color: #d35400;
+        width: 5px;
+        height: 80px;
+    }
+
+    .left-bar-and-heading .heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    .heading-text {
+        font-size: 10px;
+    }
+
+    /* Our Investors */
+    .our-investors {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .our-investors-row {
+        display: block;
+    }
+
+    .investor-profile {
+        margin: 20px 0;
+    }
+
+    .investor-profile img {
+        border-radius: 50%;
+    }
+
+    .investor-name {
+        font-weight: bold;
+    }
+
+    /* .investor-description {} */
+
+    /* Contact Us Banner */
+    .contact-us-banner {
+        background-color: #145a32;
+        color: white;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        padding: 40px;
+    }
+
+    .contact-us-banner h2 {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    .contact-us-banner q {
+        font-style: italic;
+    }
+
+    .contact-us-banner a {
+        display: block;
+        width: 80%;
+        margin: 40px auto 0 auto;
+        background-color: white;
+        padding: 10px 15px;
+        color: #145a32;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+}
