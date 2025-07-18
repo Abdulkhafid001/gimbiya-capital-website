@@ -207,6 +207,29 @@
     font-size: 13px;
 }
 
+/* Footer */
+.footer-container {
+    /* padding: 20px; */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.footer-container img {
+    width: 400px;
+    height: 200px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    background-color: #d35400;
+    padding: 20px;
+}
+
+.footer-bottom h2 {
+    font-weight: bold;
+}
+
 
 
 /* <============================================ Small Screens =============================================> */
@@ -396,5 +419,26 @@
 
     .preferred-sector-text p {
         font-size: 13px;
+    }
+
+
+    /* Footer */
+    .footer-container {
+        /* padding: 20px; */
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: white;
+    }
+
+    /* .footer-container img {} */
+
+    .footer-bottom {
+        margin-top: 20px;
+        background-color: #d35400;
+        padding: 20px;
+    }
+
+    .footer-bottom h2 {
+        font-weight: bold;
     }
 }
