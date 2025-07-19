@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <================================= Large Screens =============================> */
+/* Navbar Styles */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d14e00;
+    /* deep orange */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.logo img {
+    height: 32px;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.75;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    display: block;
+    border-radius: 3px;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* .banner h1{} */
+/* .banner p{} */
+
+
+
+/* Main Section Heading (Big)  */
+.how-we-work-headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #145a32;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 0;
+}
+
+.left-bar-and-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid #145a32; */
+}
+
+.left-bar {
+    background-color: #d35400;
+    width: 5px;
+    height: 80px;
+}
+
+.left-bar-and-heading .heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.heading-text {
+    font-size: 20px;
+}
+
+/* Our Advisors */
+.our-advisors {
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* .our-advisors-profile-container{} */
+.advisor-profile img {
+    border-radius: 20px;
+}
+
+/* .advisor-name {} */
+
+/* Our Investors */
+.our-investors {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.our-investors-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.investor-profile {
+    margin: 20px 0;
+}
+
+.investor-profile img {
+    border-radius: 50%;
+}
+
+.investor-name {
+    font-weight: bold;
+}
+
+.investor-description {
+    font-size: 15px;
+}
+
+/* .investor-description {} */
+/* Footer */
+.footer-container {
+    /* padding: 20px; */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.footer-container img {
+    width: 400px;
+    height: 200px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    background-color: #d35400;
+    padding: 20px;
+}
+
+.footer-bottom h2 {
+    font-weight: bold;
+}
+
+
+/* <=========================== RESPONSIVE (Mobile Screens) =================================> */
+@media screen and (max-width: 1000px) {
+
+    /* Navbar */
+    .nav-links {
+        position: absolute;
+        top: 64px;
+        right: 1rem;
+        background: white;
+        color: black;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: none;
+        z-index: 999;
+    }
+
+    .nav-links a {
+        color: black;
+        padding: 0.5rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Main Section Heading (Big)  */
+    .how-we-work-headings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #145a32;
+        color: white;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .left-bar-and-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* outline: 1px solid #145a32; */
+    }
+
+    .left-bar {
+        background-color: #d35400;
+        width: 5px;
+        height: 80px;
+    }
+
+    .left-bar-and-heading .heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    .heading-text {
+        font-size: 10px;
+    }
+
+    /* Our Advisors */
+    .our-advisors {
+        padding: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+
+
+    /* .our-advisors-profile-container{} */
+    .advisor-profile img {
+        border-radius: 20px;
+    }
+
+    /* .advisor-name {} */
+    /* Our Investors */
+    .our-investors {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .our-investors-row {
+        display: block;
+    }
+
+    .investor-profile {
+        margin: 20px 0;
+    }
+
+    .investor-profile img {
+        border-radius: 50%;
+    }
+
+    .investor-name {
+        font-weight: bold;
+    }
+
+    /* .investor-description {} */
+
+    /* Footer */
+    .footer-container {
+        /* padding: 20px; */
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: white;
+    }
+
+    /* .footer-container img {} */
+
+    .footer-bottom {
+        margin-top: 20px;
+        background-color: #d35400;
+        padding: 20px;
+    }
+
+    .footer-bottom h2 {
+        font-weight: bold;
+    }
+}

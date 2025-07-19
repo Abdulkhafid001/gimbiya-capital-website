@@ -4,17 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Investors</title>
-    <!-- Bootstrap Links -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <title>About Us</title>
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
         integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom css -->
-    <!-- <link rel="stylesheet" href="index-style.css"> -->
-    <link rel="stylesheet" href="our-investors.css">
+    <link rel="stylesheet" href="about-style.css">
     <!-- Google fonts links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +17,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googlea pis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -56,28 +50,38 @@
             </div>
         </header>
     </section>
-    <!-- Investors Banner -->
+
+    <!-- Banner -->
     <section>
-        <div class="investors-banner">
-            <h2>We’re a group of entrepreneurs, operators, and investors, who’ve built businesses focused on long-term
-                growth and value creation
-            </h2>
+        <div class="banner">
+            <h1>About Us</h1>
+            <p>We are a collective of seasoned professionals with hands-on experience in launching and growing
+                companies that prioritize lasting impact and sustainable value.</p>
         </div>
     </section>
 
-    <!-- Founder Profile -->
+    <!-- Big heading -->
+    <div class="how-we-work-headings">
+        <div class="left-bar-and-heading">
+            <div class="left-bar"></div>
+            <h1 class="heading">Our <br> Advisors</h1>
+        </div>
+        <p class="heading-text">
+        </p>
+    </div>
+    <!-- Our Advisors -->
     <section>
-        <div class="founder">
-            <h4>We’ve partnered with a world-class team of entrepreneurs, operators, and investors with an outstanding
-                track record in growing SMBs</h4>
-            <figure>
-                <img src="assets/Davide-Zanchi-headshot.jpg" alt="" width="250" height="250">
-            </figure>
-            <h5>Bolutife Timi</h5>
-            <p>Founder of Gimbiya Capital</p>
+        <div class="our-advisors">
+            <div class="our-advisors-profile-container">
+                <div class="advisor-profile">
+                    <figure>
+                        <img src="./assets/investor-image-1.jpg" alt="">
+                    </figure>
+                    <h3 class="advisor-name">Paul Vidal</h3>
+                </div>
+            </div>
         </div>
     </section>
-
     <!-- Big heading -->
     <div class="how-we-work-headings">
         <div class="left-bar-and-heading">
@@ -87,6 +91,7 @@
         <p class="heading-text">
         </p>
     </div>
+
     <!-- Our Investors -->
     <section>
         <div class="our-investors">
@@ -112,15 +117,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact Us Banner -->
-    <section>
-        <div class="contact-us-banner">
-            <h2>Gimbiya</h2>
-            <q>We are ready. Are you?</q>
-            <a href="#" class="contact-us-btn">Contact</a>
-        </div>
-    </section>
     <!-- Footer -->
     <section>
         <footer>
@@ -136,6 +132,8 @@
             </div>
         </footer>
     </section>
+
+
     <script>
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.getElementById("navLinks");
@@ -143,7 +141,6 @@
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
-
     </script>
 </body>
 
