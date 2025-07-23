@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Investment Highlights</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .icon-container {
+            transition: transform 0.3s ease-in-out;
+        }
+        .item-container:hover .icon-container {
+            transform: scale(1.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="w-full max-w-md mx-auto bg-emerald-700 rounded-2xl shadow-xl p-8">
+<div class="space-y-8">
+<div class="flex items-center space-x-6 item-container animate-fadeIn" style="animation-delay: 0.1s;">
+<div class="icon-container bg-emerald-600 p-3 rounded-full">
+<span class="material-icons text-white text-3xl">trending_up</span>
+</div>
+<p class="text-white text-lg font-medium">Growing industry with strong tailwinds</p>
+</div>
+<div class="flex items-center space-x-6 item-container animate-fadeIn" style="animation-delay: 0.2s;">
+<div class="icon-container bg-emerald-600 p-3 rounded-full">
+<span class="material-icons text-white text-3xl">storefront</span>
+</div>
+<p class="text-white text-lg font-medium">Strong market positioning</p>
+</div>
+<div class="flex items-center space-x-6 item-container animate-fadeIn" style="animation-delay: 0.3s;">
+<div class="icon-container bg-emerald-600 p-3 rounded-full">
+<span class="material-icons text-white text-3xl">autorenew</span>
+</div>
+<p class="text-white text-lg font-medium">Recurring or highly repeatable revenues</p>
+</div>
+<div class="flex items-center space-x-6 item-container animate-fadeIn" style="animation-delay: 0.4s;">
+<div class="icon-container bg-emerald-600 p-3 rounded-full">
+<span class="material-icons text-white text-3xl">groups</span>
+</div>
+<p class="text-white text-lg font-medium">Distinct and niche market</p>
+</div>
+<div class="flex items-center space-x-6 item-container animate-fadeIn" style="animation-delay: 0.5s;">
+<div class="icon-container bg-emerald-600 p-3 rounded-full">
+<span class="material-icons text-white text-3xl">attach_money</span>
+</div>
+<p class="text-white text-lg font-medium">Strong margins</p>
+</div>
+</div>
+</div>
+
+</body></html>

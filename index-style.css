@@ -54,13 +54,17 @@
     margin: 50px 0;
 }
 
+.founder-name-custom:hover {
+    font-size: 2em;
+    font-weight: 600;
+    color: #145a32;
+}
+
 /* <================================= Large Screens =============================> */
 
-/* Navbar Styles */
 .navbar {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #d14e00;
-    /* deep orange */
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -81,7 +85,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 500;
 }
 
 .logo img {
@@ -92,12 +95,13 @@
 .nav-links {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: opacity 0.2s ease;
 }
 
@@ -105,21 +109,71 @@
     opacity: 0.75;
 }
 
-/* Hamburger Menu */
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: white;
+    min-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
-    cursor: pointer;
     gap: 6px;
+    cursor: pointer;
 }
 
 .hamburger span {
     width: 25px;
     height: 3px;
     background: white;
-    display: block;
     border-radius: 3px;
 }
+
+/* LinkedIn Icon */
+.linkedin-icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
 
 /* Banner */
 .banner {
@@ -141,11 +195,11 @@
 }
 
 .cta-btns {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: baseline; */
     margin-top: 40px;
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 
@@ -158,19 +212,11 @@
     border-radius: 20px;
 }
 
-.watch-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.cta-btns a:hover {
+    background-color: #d14e00;
+    color: white;
 }
 
-.watch-btn i {
-    display: block;
-}
-
-.watch-btn p {
-    margin-left: 6px;
-}
 
 /* Who We Are */
 .who-we-are {
@@ -185,6 +231,7 @@
     color: #145a32;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 46px;
 }
 
 /* .who-we-are p {} */
@@ -201,6 +248,7 @@
     color: #145a32;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 46px;
 }
 
 /* .what-we-believe p {} */
@@ -223,6 +271,7 @@
     color: #145a32;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 46px;
 }
 
 .where-we-focus p {
@@ -254,13 +303,16 @@
 
 .criteria {
     margin: 20px 0;
-    text-align: right;
+    text-align: left;
 }
 
 .criteria i {
     display: block;
     font-size: 2vw;
     color: #79EFBC;
+    background-color: #074a24;
+    padding: 20px 30px;
+    border-radius: 50%;
 }
 
 .criteria h5 {
@@ -312,12 +364,15 @@
     border-radius: 10px;
 }
 
+
 /* Footer */
+
+
 .footer-container {
     /* padding: 20px; */
     text-align: center;
     font-family: "Poppins", sans-serif;
-    color: white;
+    color: black;
 }
 
 .footer-container img {
@@ -329,6 +384,10 @@
     margin-top: 20px;
     background-color: #d35400;
     padding: 20px;
+    background: url("assets/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    color: black;
 }
 
 .footer-bottom h2 {
@@ -361,14 +420,13 @@
         color: black;
         flex-direction: column;
         align-items: flex-start;
-        padding: 1rem;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        padding: 3rem;
         border-radius: 8px;
         display: none;
-        z-index: 999;
     }
 
-    .nav-links a {
+    .nav-links a,
+    .dropbtn {
         color: black;
         padding: 0.5rem 0;
     }
@@ -377,9 +435,29 @@
         display: flex;
     }
 
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background: none;
+        padding-left: 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: flex;
+    }
+
     .hamburger {
         display: flex;
     }
+
 
     /* Banner */
     .banner {
@@ -401,9 +479,9 @@
     }
 
     .cta-btns {
-        display: flex;
+        /* display: flex;
         justify-content: space-around;
-        align-items: baseline;
+        align-items: baseline; */
         margin-top: 40px;
         width: 100%;
         margin: 0;
@@ -411,26 +489,25 @@
 
     .cta-btns a {
         display: block;
-        background-color: #145a32;
+        border: 2px solid #145a32;
+        background-color: white;
         text-decoration: none;
-        color: white;
+        color: #145a32;
         padding: 10px 20px;
         border-radius: 20px;
+        font-weight: bold;
     }
 
-    .watch-btn {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+    .cta-btns a:hover {
+        background-color: white;
+        color: #145a32;
+        border: 2px solid #145a32;
+        transition: border 2s ease-in;
     }
 
-    .watch-btn i {
-        display: block;
-    }
 
-    .watch-btn p {
-        margin-left: 6px;
-    }
+
+
 
 
     /* company profile card */
@@ -492,6 +569,7 @@
         color: #145a32;
         font-weight: bold;
         text-transform: capitalize;
+        font-size: 26px;
     }
 
     /* .who-we-are p {} */
@@ -508,6 +586,7 @@
         color: #145a32;
         font-weight: bold;
         text-transform: capitalize;
+        font-size: 26px;
     }
 
     /* .what-we-believe p {} */
@@ -530,6 +609,7 @@
         color: #145a32;
         font-weight: bold;
         text-transform: capitalize;
+        font-size: 26px;
     }
 
     .where-we-focus p {
@@ -566,6 +646,9 @@
         font-size: 20vw;
         color: #79EFBC;
         text-align: center;
+        padding: 0;
+        border-radius: 0;
+        background: none;
     }
 
     .criteria h5 {
@@ -635,6 +718,7 @@
         margin-top: 20px;
         background-color: #d35400;
         padding: 20px;
+        background-size: contain;
     }
 
     .footer-bottom h2 {

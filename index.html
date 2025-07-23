@@ -25,28 +25,74 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <style>
+        /* Loader full-screen overlay */
+        #loader {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: white;
+            /* or dark if you prefer */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        /* Blinking animation */
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blinking {
+            animation: blink 1s infinite;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <section>
+    <!-- Loading Overlay -->
+    <div id="loader">
+        <img src="./assets/Gimbiya Capital.png" alt="Loading..." class="blinking" />
+    </div>
+
+    <div class="site-content">
+        <!-- Navbar -->
         <header class="navbar">
             <div class="container">
                 <div class="logo">
-                    <img src="assets/Logo.png" alt="Gimbiya Capital Logo">
+                    <img src="assets/Logo.png" alt="Gimbiya Capital Logo" />
                     <span>Gimbiya Capital</span>
                 </div>
 
                 <nav class="nav-links" id="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
-                    <a href="investment-criteria.html">Investment Criteria</a>
-                    <a href="our-investors.html">Our Investors</a>
-                    <a href="our-advisors.html">Our Advisors</a>
-                    <a href="#">LinkedIn</a>
+                    <a href="#">Home</a>
+
+                    <div class="dropdown">
+                        <a href="about.html" class="dropbtn">About Us ▾</a>
+                        <div class="dropdown-content">
+                            <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
+                            <a href="investment-criteria.html">Investment Criteria</a>
+                            <a href="our-investors.html">Our Investors</a>
+                            <a href="our-advisors.html">Our Advisors</a>
+                        </div>
+                    </div>
+
+                    <a href="#">Contact Us</a>
+
+                    <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                            alt="LinkedIn" />
+                    </a>
                 </nav>
 
                 <div class="hamburger" id="hamburger">
@@ -56,170 +102,189 @@
                 </div>
             </div>
         </header>
-    </section>
 
-    <!-- Banner -->
-    <section>
-        <div class="banner">
-            <h1 class="banner-heading">Continuing Legacies. Backing the Next Chapter</h1>
-            <p class="bannner-text"> We acquire and nurture great businesses, protecting what makes them special while
-                helping them grow.</p>
-            <div class="cta-btns">
-                <a href="how-we-work.html">Get Started</a>
-                <div class="watch-btn">
-                    <i class="bi bi-play-circle-fill"></i>
-                    <p>Watch Demo</p>
+        <!-- Banner -->
+        <section>
+            <div class="banner">
+                <h1 class="banner-heading">Continuing Legacies. Backing the Next Chapter.</h1>
+                <p class="bannner-text"> We acquire and nurture great businesses, protecting what makes them special
+                    while
+                    helping them grow.</p>
+                <div class="cta-btns">
+                    <p>Ready to transition your business?</p>
+                    <p> Let's explore how we can help carry it forward.</p>
+                    <a href="contact.html">Start a Conversation</a>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Who we are -->
-    <section class="my-lg">
-        <div class="who-we-are">
-            <h3>Who we are</h3>
-            <p>Gimbiya Capital is a London-based
-                entrepreneurial investment firm
-                with a simple goal: to acquire and
-                grow a single great business for the
-                long term. We are not a private equity
-                fund. We do not flip businesses.
-                We roll up our sleeves and become
-                true owner-operators.
-            </p>
-        </div>
-    </section>
-    <!-- What we believe -->
-    <section class="my-lg">
-        <div class="what-we-believe">
-            <h3>what we believe</h3>
-            <p><span>1.</span> Businesses are built by people who
-                care, and they should be run
-                by people who care just as much</p>
-            <p> <span>2.</span> A good succession plan is more
-                than a deal. It is about trust,
-                respect, and carrying forward the
-                values that made a business strong
-            </p>
-            <p> <span>3.</span> Sustainable growth happens when
-                you invest in people, processes, and
-                the communities your business serves</p>
-        </div>
-    </section>
-    <!-- Business Criteria  -->
-    <section class="my-lg">
-        <div class="where-we-focus">
-            <h3>Where we Focus</h3>
-            <p>We look for strong, profitable businesses in the UK,
-                especially in sectors where operational know-how and
-                trust are everything. Our investors and advisors are
-                experienced operators, CEOs, and entrepreneurs who
-                share our belief in building for the long term.
-            </p>
-            <div class="business-criteria">
-                <div class="business-criteria-card">
-                    <div class="criteria">
-                        <div class="criteria-icon-and-text">
-                            <i class="bi bi-graph-up-arrow"></i>
-                            <h5>Growing industry with strong tailwinds</h5>
+        <!-- Who we are -->
+        <section class="my-lg">
+            <div class="who-we-are">
+                <h3>Who we are</h3>
+                <p>Gimbiya Capital is a London-based
+                    entrepreneurial investment firm
+                    with a simple goal: to acquire and
+                    grow a single great business for the
+                    long term. We are not a private equity
+                    fund. We do not flip businesses.
+                    We roll up our sleeves and become
+                    true owner-operators.
+                </p>
+            </div>
+        </section>
+        <!-- What we believe -->
+        <section class="my-lg">
+            <div class="what-we-believe">
+                <h3>what we believe</h3>
+                <p><span>1.</span> Businesses are built by people who
+                    care, and they should be run
+                    by people who care just as much</p>
+                <p> <span>2.</span> A good succession plan is more
+                    than a deal. It is about trust,
+                    respect, and carrying forward the
+                    values that made a business strong
+                </p>
+                <p> <span>3.</span> Sustainable growth happens when
+                    you invest in people, processes, and
+                    the communities your business serves</p>
+            </div>
+        </section>
+        <!-- Business Criteria  -->
+        <section class="my-lg">
+            <div class="where-we-focus">
+                <h3>Where we Focus</h3>
+                <p>We look for strong, profitable businesses in the UK,
+                    especially in sectors where operational know-how and
+                    trust are everything. Our investors and advisors are
+                    experienced operators, CEOs, and entrepreneurs who
+                    share our belief in building for the long term.
+                </p>
+                <div class="business-criteria">
+                    <div class="business-criteria-card">
+                        <div class="criteria">
+                            <div class="criteria-icon-and-text">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <h5>Growing with strong tailwinds</h5>
+                            </div>
+                            <p>There are various types of investments
+                                available and you can choose investments</p>
                         </div>
-                        <p>There are various types of investments
-                            available and you can choose investments</p>
-                    </div>
-                    <div class="criteria">
-                        <div class="criteria-icon-and-text">
-                            <i class="bi bi-bar-chart-line"></i>
-                            <h5>Strong market positioning</h5>
+                        <div class="criteria">
+                            <div class="criteria-icon-and-text">
+                                <i class="bi bi-bank"></i>
+                                <h5>Strong market positioning</h5>
+                            </div>
+                            <p>There are various types of investments
+                                available and you can choose investments</p>
                         </div>
-                        <p>There are various types of investments
-                            available and you can choose investments</p>
-                    </div>
-                    <div class="criteria">
-                        <div class="criteria-icon-and-text">
-                            <i class="bi bi-bar-chart-line"></i>
-                            <h5>Recurring or highly repeatable revenues</h5>
+                        <div class="criteria">
+                            <div class="criteria-icon-and-text">
+                                <i class="bi bi-pie-chart"></i>
+                                <h5>Recurring repeatable revenues</h5>
+                            </div>
+                            <p>There are various types of investments
+                                available and you can choose investments</p>
                         </div>
-                        <p>There are various types of investments
-                            available and you can choose investments</p>
-                    </div>
-                    <div class="criteria">
-                        <div class="criteria-icon-and-text">
-                            <i class="bi bi-bar-chart-line"></i>
-                            <h5>Distinct and niche market</h5>
+                        <div class="criteria">
+                            <div class="criteria-icon-and-text">
+                                <i class="bi bi-bezier2"></i>
+                                <h5>Distinct and niche market</h5>
+                            </div>
+                            <p>There are various types of investments
+                                available and you can choose investments</p>
                         </div>
-                        <p>There are various types of investments
-                            available and you can choose investments</p>
-                    </div>
-                    <div class="criteria">
-                        <div class="criteria-icon-and-text">
-                            <i class="bi bi-bar-chart-line"></i>
-                            <h5>High margins</h5>
-                        </div>
-                        <p>There are various types of investments
-                            available and you can choose investments</p>
+                        <div class="criteria">
+                            <div class="criteria-icon-and-text">
+                                <i class="bi bi-safe"></i>
+                                <h5>Strong margins</h5>
+                            </div>
+                            <p>There are various types of investments
+                                available and you can choose investments</p>
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <!-- Founder Profile -->
-    <section class="my-lg">
-        <div class="founder-profile">
-            <h3>We want to work with you to take your business to the next level. </h3>
-            <div class="founder-profile-container">
-                <figure>
-                    <img src="./assets/company-ceo-profile.jpg" alt="Bolutife Image">
-                </figure>
-                <div class="founder-text">
-                    <p>Bolutife Babalola founded Gimbiya Capital with a deep belief that the most enduring businesses
-                        are
-                        built
-                        by those who truly understand the engine room — not just the boardroom. Inspired by his parents’
-                        entrepreneurial journey and grounded in his own experience across engineering, operations, and
-                        business
-                        <br>
-                        transformation, Bolutife is committed to partnering with founders who care deeply about what
-                        they’ve
-                        <br>
-                        built. Gimbiya Capital exists to support those seeking a thoughtful successor — someone who will
-                        honour
-                        <br>
-                        their legacy, protect their team, and grow the business with <br>the same dedication and purpose
-                        that
-                        built
-                        it in the first place.
-                    </p>
-                    <a href="why-founders-choose-us.html" class="learn-more">Learn More</a>
+        <!-- Founder Profile -->
+        <section class="my-lg">
+            <div class="founder-profile">
+                <h3>We want to work with you to take your business to the next level. </h3>
+                <div class="founder-profile-container">
+                    <figure>
+                        <img src="./assets/company-ceo-profile.jpg" alt="Bolutife Image">
+                    </figure>
+                    <div class="founder-text">
+                        <p><span class="founder-name-custom">Bolutife Babalola</span> founded Gimbiya Capital with a
+                            deep
+                            belief that the most enduring businesses
+                            are
+                            built
+                            by those who truly understand the engine room, not just the boardroom. Inspired by his
+                            parents'
+                            entrepreneurial journey and grounded in his own experience across engineering, operations,
+                            and
+                            business
+                            <br>
+                            transformation, Bolutife is committed to partnering with founders who care deeply about what
+                            they've
+                            <br>
+                            built. Gimbiya Capital exists to support those seeking a thoughtful successor, someone who
+                            will
+                            honour
+                            <br>
+                            their legacy, protect their team, and grow the business with <br>the same dedication and
+                            purpose
+                            that
+                            built
+                            it in the first place.
+                        </p>
+                        <a href="why-founders-choose-us.html" class="learn-more">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <section>
-        <footer>
-            <div class="footer-container">
-                <img src="assets/Gimbiya Capital.png" alt="Gimbiya Capital Logo" width="300" height="200">
-                <div class="footer-bottom">
-                    <h2>For Investor Inquiries</h2>
-                    <p>Bolutife (Tomi) Babalola</p>
-                    <p>(44) 7508 764 675</p>
-                    <p>Bolutife@gimbiyacapital.com</p>
-                    <p>Copyright &copy; 2025 Gimbiya Capital - All Rights Reserved.</p>
+        <!-- Footer -->
+        <section>
+            <footer>
+                <div class="footer-container">
+                    <img src="assets/Gimbiya Capital.png" alt="Gimbiya Capital Logo" width="300" height="200">
+                    <div class="footer-bottom">
+                        <h2>For Investor Inquiries</h2>
+                        <p>Bolutife (Tomi) Babalola</p>
+                        <p>(44) 7508 764 675</p>
+                        <p>Bolutife@gimbiyacapital.com</p>
+                        <p>Copyright &copy; 2025 Gimbiya Capital - All Rights Reserved.</p>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </section>
+            </footer>
+        </section>
+    </div>
 
     <script>
+        // Preloader Screen
+        window.addEventListener("load", function () {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        });
+        // Navbar Small Screen Menu
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.getElementById("navLinks");
+        const dropdown = document.querySelector(".dropdown");
 
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active");
+        });
+
+        // Toggle dropdown on mobile
+        dropdown.addEventListener("click", () => {
+            if (window.innerWidth <= 1000) {
+                dropdown.classList.toggle("active");
+            }
         });
     </script>
 </body>

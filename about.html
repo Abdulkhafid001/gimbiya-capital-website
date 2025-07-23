@@ -23,43 +23,105 @@
 
 <body>
     <!-- Navbar -->
-    <section>
-        <header class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <img src="assets/Logo.png" alt="Gimbiya Capital Logo">
-                    <span>Gimbiya Capital</span>
-                </div>
-
-                <nav class="nav-links" id="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
-                    <a href="investment-criteria.html">Investment Criteria</a>
-                    <a href="our-investors.html">Our Investors</a>
-                    <a href="our-advisors.html">Our Advisors</a>
-                    <a href="#">LinkedIn</a>
-                </nav>
-
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/Logo.png" alt="Gimbiya Capital Logo" />
+                <span>Gimbiya Capital</span>
             </div>
-        </header>
-    </section>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="about.html" class="dropbtn">About Us ▾</a>
+                    <div class="dropdown-content">
+                        <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
+                        <a href="investment-criteria.html">Investment Criteria</a>
+                        <a href="our-investors.html">Our Investors</a>
+                        <a href="our-advisors.html">Our Advisors</a>
+                    </div>
+                </div>
+
+                <a href="#">Contact Us</a>
+
+                <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                        alt="LinkedIn" />
+                </a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
 
     <!-- Banner -->
     <section>
         <div class="banner">
             <h1>About Us</h1>
-            <p>We are a collective of seasoned professionals with hands-on experience in launching and growing
+            <p>We are a collective of seasoned professionals with hands-on <br> experience in launching and growing
                 companies that prioritize lasting impact and sustainable value.</p>
         </div>
     </section>
 
+    <!-- By The Numbers -->
+    <section>
+        <div class="by-the-numbers">
+            <h2 class="title">Our numbers</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <h2>2025</h2>
+                    <p>Gimbiya Capital founded</p>
+                </div>
+                <div class="stat">
+                    <h2>24</h2>
+                    <p>Offices worldwide</p>
+                </div>
+                <div class="stat">
+                    <h2>3+</h2>
+                    <p>Qualified team members</p>
+                </div>
+                <div class="stat">
+                    <h2>~£3<sup>M</sup></h2>
+                    <p>In investment capital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How we partner -->
+    <section>
+        <div class="how-we-partner">
+            <span>HOW WE PARTNER DIFFERENTLY</span>
+            <h2>Partnership is at our core</h2>
+            <div class="parntership-method">
+                <h4>With colleagues</h4>
+                <p>Founded as a private partnership in 2025, we have fostered a culture of innovation,
+                    entrepreneurialism, and agility, empowering our people to define and own their career trajectories.
+                    Today, our partnership approach allows us to pursue strategic platform growth and creates a shared
+                    commitment to cross-platform collaboration.</p>
+            </div>
+            <div class="parntership-method">
+                <h4>With partners</h4>
+                <p>Our enduring relationships with leading experts and executives extend outside our firm to include
+                    partners, counterparties, and community organizations. By connecting deep and diverse expertise
+                    across our global networks, we unlock breakthrough insight and unseen opportunity.</p>
+            </div>
+            <div class="parntership-method">
+                <h4>With management</h4>
+                <p>Management teams at portfolio companies experience our partnership approach in action. We dive into
+                    each organization with analytic rigor and quickly align the resources best equipped to understand
+                    and enhance the unique financial, operational, and cultural dynamics. Led by the conviction of what
+                    makes a good company great, we work closely with management teams through growth stages and
+                    strategic pivots by challenging conventional thinking and continuously striving for scaled
+                    improvement.</p>
+            </div>
+        </div>
+    </section>
     <!-- Big heading -->
     <div class="how-we-work-headings">
         <div class="left-bar-and-heading">
@@ -75,7 +137,7 @@
             <div class="our-advisors-profile-container">
                 <div class="advisor-profile">
                     <figure>
-                        <img src="./assets/investor-image-1.jpg" alt="">
+                        <img src="assets/investor-image-1.jpg" alt="">
                     </figure>
                     <h3 class="advisor-name">Paul Vidal</h3>
                 </div>
@@ -121,7 +183,7 @@
     <section>
         <footer>
             <div class="footer-container">
-                <img src="assets/Gimbiya Capital.png" alt="Gimbiya Capital Logo" width="300" height="200">
+                <img class="mt-sm" src="assets/Gimbiya Capital.png" alt="Gimbiya Capital Logo" width="300" height="200">
                 <div class="footer-bottom">
                     <h2>For Investor Inquiries</h2>
                     <p>Bolutife (Tomi) Babalola</p>
@@ -137,9 +199,17 @@
     <script>
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.getElementById("navLinks");
+        const dropdown = document.querySelector(".dropdown");
 
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active");
+        });
+
+        // Toggle dropdown on mobile
+        dropdown.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                dropdown.classList.toggle("active");
+            }
         });
     </script>
 </body>

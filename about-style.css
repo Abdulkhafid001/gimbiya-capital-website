@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+/* Utility Classes */
+.mt-sm {
+    margin-top: 10px;
+}
+
 /* <================================= Large Screens =============================> */
-/* Navbar Styles */
+
 .navbar {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #d14e00;
-    /* deep orange */
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -30,7 +34,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 500;
 }
 
 .logo img {
@@ -41,12 +44,13 @@
 .nav-links {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: opacity 0.2s ease;
 }
 
@@ -54,21 +58,72 @@
     opacity: 0.75;
 }
 
-/* Hamburger Menu */
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: white;
+    min-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
-    cursor: pointer;
     gap: 6px;
+    cursor: pointer;
 }
 
 .hamburger span {
     width: 25px;
     height: 3px;
     background: white;
-    display: block;
     border-radius: 3px;
 }
+
+/* LinkedIn Icon */
+.linkedin-icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+
 
 /* Banner */
 .banner {
@@ -77,8 +132,86 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* .banner h1{} */
+.banner h1 {
+    font-size: 4em;
+    color: #145a32;
+}
+
 /* .banner p{} */
+
+/* By The Numbers */
+.by-the-numbers {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    background-color: #c2f9d3;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.by-the-numbers .title {
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+
+.stat {
+    margin: 50px 0;
+}
+
+.stat h2 {
+    font-size: 3em;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #0077ff;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #315d90;
+}
+
+/* How We Partner */
+.how-we-partner {
+    padding: 20px;
+    background-color: #315d90;
+    color: #1c2156;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(141deg, #7bafea 0%, #6c94c4 51%, #456e9e 75%);
+
+}
+
+.how-we-partner span {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.how-we-partner h2 {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.parntership-method {
+    margin: 30px 0;
+}
+
+.parntership-method h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* .parntership-method p {} */
 
 
 
@@ -124,11 +257,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-
-
 /* .our-advisors-profile-container{} */
 .advisor-profile img {
     border-radius: 20px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.advisor-profile img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: none;
 }
 
 /* .advisor-name {} */
@@ -138,6 +277,7 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 20px;
+    background-color: rgb(249 250 251)
 }
 
 .our-investors-row {
@@ -152,6 +292,14 @@
 
 .investor-profile img {
     border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.investor-profile img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: none;
 }
 
 .investor-name {
@@ -160,6 +308,7 @@
 
 .investor-description {
     font-size: 15px;
+    color: gray;
 }
 
 /* .investor-description {} */
@@ -180,6 +329,10 @@
     margin-top: 20px;
     background-color: #d35400;
     padding: 20px;
+    background: url("assets/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    color: black;
 }
 
 .footer-bottom h2 {
@@ -199,14 +352,13 @@
         color: black;
         flex-direction: column;
         align-items: flex-start;
-        padding: 1rem;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        padding: 3rem;
         border-radius: 8px;
         display: none;
-        z-index: 999;
     }
 
-    .nav-links a {
+    .nav-links a,
+    .dropbtn {
         color: black;
         padding: 0.5rem 0;
     }
@@ -215,9 +367,97 @@
         display: flex;
     }
 
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background: none;
+        padding-left: 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: flex;
+    }
+
     .hamburger {
         display: flex;
     }
+
+    /* By The Numbers */
+    .by-the-numbers {
+        font-family: "Poppins", sans-serif;
+        padding: 20px;
+        background-color: #c2f9d3;
+        background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    }
+
+    .by-the-numbers .title {
+        font-weight: 300;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
+
+    .stats-container {
+        text-align: center;
+        display: block;
+    }
+
+    .stat {
+        margin: 50px 0;
+    }
+
+    .stat h2 {
+        font-size: 3em;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        color: #0077ff;
+        margin-bottom: 10px;
+    }
+
+    .stat p {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        color: #315d90;
+    }
+
+    /* How We Partner */
+    .how-we-partner {
+        padding: 20px;
+        background-color: #315d90;
+        color: #1c2156;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(141deg, #7bafea 0%, #6c94c4 51%, #456e9e 75%);
+    }
+
+    .how-we-partner span {
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+    }
+
+    .how-we-partner h2 {
+        font-size: 1.7em;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+
+    .parntership-method {
+        margin: 30px 0;
+    }
+
+    .parntership-method h4 {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    /* .parntership-method p {} */
 
     /* Main Section Heading (Big)  */
     .how-we-work-headings {
@@ -258,6 +498,7 @@
         padding: 20px;
         text-align: center;
         font-family: "Poppins", sans-serif;
+        background-color: rgb(249 250 251)
     }
 
 
@@ -265,6 +506,14 @@
     /* .our-advisors-profile-container{} */
     .advisor-profile img {
         border-radius: 20px;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .advisor-profile img:hover {
+        -webkit-filter: grayscale(0%);
+        filter: none;
     }
 
     /* .advisor-name {} */
@@ -273,6 +522,7 @@
         font-family: "Poppins", sans-serif;
         text-align: center;
         padding: 20px;
+        background-color: rgb(249 250 251)
     }
 
     .our-investors-row {
@@ -280,18 +530,30 @@
     }
 
     .investor-profile {
-        margin: 20px 0;
+        margin: 50px 0;
     }
 
     .investor-profile img {
         border-radius: 50%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .investor-profile img:hover {
+        -webkit-filter: grayscale(0%);
+        filter: none;
     }
 
     .investor-name {
-        font-weight: bold;
+        font-weight: bolder;
+        font-size: 20px;
     }
 
-    /* .investor-description {} */
+    .investor-description {
+        font-weight: 600;
+        color: gray;
+    }
 
     /* Footer */
     .footer-container {
@@ -307,6 +569,7 @@
         margin-top: 20px;
         background-color: #d35400;
         padding: 20px;
+        background-size: contain;
     }
 
     .footer-bottom h2 {

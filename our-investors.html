@@ -29,38 +29,46 @@
 
 <body>
     <!-- Navbar -->
-    <section>
-        <header class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <img src="assets/Logo.png" alt="Gimbiya Capital Logo">
-                    <span>Gimbiya Capital</span>
-                </div>
-
-                <nav class="nav-links" id="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
-                    <a href="investment-criteria.html">Investment Criteria</a>
-                    <a href="our-investors.html">Our Investors</a>
-                    <a href="our-advisors.html">Our Advisors</a>
-                    <a href="#">LinkedIn</a>
-                </nav>
-
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/Logo.png" alt="Gimbiya Capital Logo" />
+                <span>Gimbiya Capital</span>
             </div>
-        </header>
-    </section>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#">Home</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">About Us ▾</button>
+                    <div class="dropdown-content">
+                        <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
+                        <a href="investment-criteria.html">Investment Criteria</a>
+                        <a href="our-investors.html">Our Investors</a>
+                        <a href="our-advisors.html">Our Advisors</a>
+                    </div>
+                </div>
+
+                <a href="#">Contact Us</a>
+
+                <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                        alt="LinkedIn" />
+                </a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
     <!-- Investors Banner -->
     <section>
         <div class="investors-banner">
-            <h2>We’re a group of entrepreneurs, operators, and investors, who’ve built businesses focused on long-term
-                growth and value creation
+            <h2>We're a group of entrepreneurs, operators, and investors, who've built businesses focused on long-term
+                growth and value creation.
             </h2>
         </div>
     </section>
@@ -139,11 +147,18 @@
     <script>
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.getElementById("navLinks");
+        const dropdown = document.querySelector(".dropdown");
 
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
 
+        // Toggle dropdown on mobile
+        dropdown.addEventListener("click", () => {
+            if (window.innerWidth <= 1000) {
+                dropdown.classList.toggle("active");
+            }
+        });
     </script>
 </body>
 
