@@ -352,7 +352,7 @@
         color: black;
         flex-direction: column;
         align-items: flex-start;
-        padding: 3rem;
+        padding: 0 1.5rem 0 1.5rem;
         border-radius: 8px;
         display: none;
     }
@@ -388,6 +388,10 @@
 
     .hamburger {
         display: flex;
+    }
+
+    .banner p {
+        font-size: 12px;
     }
 
     /* By The Numbers */

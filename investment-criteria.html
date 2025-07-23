@@ -37,11 +37,12 @@
             </div>
 
             <nav class="nav-links" id="navLinks">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
 
                 <div class="dropdown">
                     <button class="dropbtn">About Us ▾</button>
                     <div class="dropdown-content">
+                        <a href="about.html">About</a>
                         <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
                         <a href="investment-criteria.html">Investment Criteria</a>
                         <a href="our-investors.html">Our Investors</a>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
 
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
 
                 <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
                     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
@@ -149,7 +150,15 @@
                 dropdown.classList.toggle("active");
             }
         });
+        // Close navbar when clicking outside
+        document.addEventListener("click", (e) => {
+            const isClickInsideNav = navLinks.contains(e.target) || hamburger.contains(e.target);
 
+            if (!isClickInsideNav && navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+                dropdown.classList.remove("active"); // Also close dropdown if open
+            }
+        });
     </script>
 </body>
 

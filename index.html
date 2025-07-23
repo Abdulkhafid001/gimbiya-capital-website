@@ -75,11 +75,12 @@
                 </div>
 
                 <nav class="nav-links" id="navLinks">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
 
                     <div class="dropdown">
-                        <a href="about.html" class="dropbtn">About Us ▾</a>
+                        <button class="dropbtn">About Us ▾</button>
                         <div class="dropdown-content">
+                            <a href="about.html">About</a>
                             <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
                             <a href="investment-criteria.html">Investment Criteria</a>
                             <a href="our-investors.html">Our Investors</a>
@@ -87,7 +88,7 @@
                         </div>
                     </div>
 
-                    <a href="#">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
 
                     <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
                         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
@@ -215,7 +216,7 @@
                 <h3>We want to work with you to take your business to the next level. </h3>
                 <div class="founder-profile-container">
                     <figure>
-                        <img src="./assets/company-ceo-profile.jpg" alt="Bolutife Image">
+                        <img src="./assets/bolutife-image.jpg" alt="Bolutife Image" width="300">
                     </figure>
                     <div class="founder-text">
                         <p><span class="founder-name-custom">Bolutife Babalola</span> founded Gimbiya Capital with a
@@ -267,6 +268,10 @@
 
     <script>
         // Preloader Screen
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        });
         window.addEventListener("load", function () {
             document.getElementById("loader").style.display = "none";
             document.getElementById("content").style.display = "block";
@@ -284,6 +289,15 @@
         dropdown.addEventListener("click", () => {
             if (window.innerWidth <= 1000) {
                 dropdown.classList.toggle("active");
+            }
+        });
+        // Close navbar when clicking outside
+        document.addEventListener("click", (e) => {
+            const isClickInsideNav = navLinks.contains(e.target) || hamburger.contains(e.target);
+
+            if (!isClickInsideNav && navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+                dropdown.classList.remove("active"); // Also close dropdown if open
             }
         });
     </script>

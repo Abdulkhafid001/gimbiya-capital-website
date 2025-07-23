@@ -34,8 +34,9 @@
                 <a href="index.html">Home</a>
 
                 <div class="dropdown">
-                    <a href="about.html" class="dropbtn">About Us ▾</a>
+                    <button class="dropbtn">About Us ▾</button>
                     <div class="dropdown-content">
+                        <a href="about.html">About</a>
                         <a href="why-founders-choose-us.html">Why Founders Choose Us</a>
                         <a href="investment-criteria.html">Investment Criteria</a>
                         <a href="our-investors.html">Our Investors</a>
@@ -43,7 +44,7 @@
                     </div>
                 </div>
 
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
 
                 <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">
                     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
@@ -137,9 +138,9 @@
             <div class="our-advisors-profile-container">
                 <div class="advisor-profile">
                     <figure>
-                        <img src="assets/investor-image-1.jpg" alt="">
+                        <img src="assets/site-image-placeholder.jpg" alt="" width="200" height="200">
                     </figure>
-                    <h3 class="advisor-name">Paul Vidal</h3>
+                    <h3 class="advisor-name">John Doe</h3>
                 </div>
             </div>
         </div>
@@ -160,18 +161,18 @@
             <div class="our-investors-row">
                 <div class="investor-profile">
                     <figure>
-                        <img src="assets/Davide-Zanchi-headshot.jpg" alt="Simon Webster" width="200" height="200">
+                        <img src="assets/site-image-placeholder.jpg" alt="Simon Webster" width="200" height="200">
                     </figure>
-                    <h5 class="investor-name">Davide Zanchi</h5>
+                    <h5 class="investor-name">John Doe</h5>
                     <p class="investor-description">Simon Webster
                         Former CEO of Rehabilitation Services. Director of ESMS Global Lecturer at London Business
                         School</p>
                 </div>
                 <div class="investor-profile">
                     <figure>
-                        <img src="assets/Davide-Zanchi-headshot.jpg" alt="Simon Webster" width="200" height="200">
+                        <img src="assets/site-image-placeholder.jpg" alt="Simon Webster" width="200" height="200">
                     </figure>
-                    <h5 class="investor-name">Davide Zanchi</h5>
+                    <h5 class="investor-name">John Doe</h5>
                     <p class="investor-description">Simon Webster
                         Former CEO of Rehabilitation Services. Director of ESMS Global Lecturer at London Business
                         School</p>
@@ -209,6 +210,15 @@
         dropdown.addEventListener("click", () => {
             if (window.innerWidth <= 768) {
                 dropdown.classList.toggle("active");
+            }
+        });
+        // Close navbar when clicking outside
+        document.addEventListener("click", (e) => {
+            const isClickInsideNav = navLinks.contains(e.target) || hamburger.contains(e.target);
+
+            if (!isClickInsideNav && navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+                dropdown.classList.remove("active"); // Also close dropdown if open
             }
         });
     </script>
