@@ -168,12 +168,10 @@
 }
 
 /* LinkedIn Icon */
-.linkedin-icon img {
-    width: 20px;
-    height: 20px;
-    filter: invert(100%);
+.linkedin-icon i {
+    color: #0a66c2;
+    font-size: 36px;
 }
-
 
 /* Banner */
 .banner {
@@ -423,6 +421,7 @@
         padding: 0 1.5rem 0 1.5rem;
         border-radius: 8px;
         display: none;
+        gap: 0.5rem;
     }
 
     .nav-links a,
